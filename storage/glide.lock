@@ -1,0 +1,12 @@
+hash: 83b153187d03210b930fb01504aa990d960f9003fbd689e2d2365ea87fb3c417
+updated: 2019-09-11T08:26:15.248026+03:00
+imports:
+- name: github.com/boltdb/bolt
+  version: 2f1ce7a837dcb8da3ec595b1dac9d0632f0f99e8
+- name: github.com/nats-io/go-nats
+  version: 70fe06cee50d4b6f98248d9675fb55f2a3aa7228
+- name: golang.org/x/sys
+  version: bbd175535a8b9969bb0b33f1502f681ee0b122bd
+  subpackages:
+  - unix
+testImports: []

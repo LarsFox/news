@@ -1,0 +1,29 @@
+syntax = "proto3";
+
+package newsgrpc;
+
+// Сервис работы с новостями.
+service News {
+    // GetNewsPiece возвращает статью.
+    //
+    // Коды ошибок:
+    // 1 — внутренняя ошибка;
+    // 1001 — запись не найдена.
+    rpc GetNewsPiece (GetNewsPieceRequest) returns (GetNewsPieceReply);
+}
+
+message GetNewsPieceRequest {
+    // Идентификатор новости.
+    string newsID = 1;
+}
+
+message GetNewsPieceReply {
+    // Код ошибки. Если ошибки нет, код равен 0.
+    int32 error_code = 1;
+
+    // Заголовок новости.
+    string header = 2;
+
+    // Unix время создания.
+    int64 date = 3;
+}

@@ -1,0 +1,26 @@
+hash: 58126a2f32046185011c25f57ee940396143fb802e54076d8acccc2c83743600
+updated: 2019-09-11T08:31:52.778782+03:00
+imports:
+- name: github.com/gorilla/mux
+  version: 00bdffe0f3c77e27d2cf6f5c70232a2d3e4d9c15
+- name: github.com/nats-io/go-nats
+  version: 70fe06cee50d4b6f98248d9675fb55f2a3aa7228
+- name: github.com/nats-io/jwt
+  version: e30da56e40ed6d3dbb04ccaae64152eec2ba0f09
+- name: github.com/nats-io/nats
+  version: 6ffcfbcbf08bc73e2158a0685edec6b32c941d38
+- name: github.com/nats-io/nats.go
+  version: 6ffcfbcbf08bc73e2158a0685edec6b32c941d38
+  subpackages:
+  - encoders/builtin
+  - util
+- name: github.com/nats-io/nkeys
+  version: 13b630ddaff0a6fe5e90ddfca4642014f84b4910
+- name: github.com/nats-io/nuid
+  version: 4b96681fa6d28dd0ab5fe79bac63b3a493d9ee94
+- name: golang.org/x/crypto
+  version: 227b76d455e791cb042b03e633e2f7fbcfdf74a5
+  subpackages:
+  - ed25519
+  - ed25519/internal/edwards25519
+testImports: []
